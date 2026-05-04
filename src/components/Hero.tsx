@@ -25,7 +25,7 @@ export default function Hero() {
           </div>
 
           <p className="text-lg mt-2 text-center md:text-left max-w-lg mx-auto md:mx-0">
-            22-years-old Software developer from Algeria
+            23-years-old Software Engineer from Algeria
           </p>
 
           <p className="text-lg mt-1 text-center md:text-left max-w-lg md:mx-0">
