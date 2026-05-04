@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme inline {
+  --color-primary: #3256E6;
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  --color-border: #e5e7eb;
+  --color-ring: #9ca3af;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #ffffff;
+  color: #171717;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .btn-item {
+    @apply flex items-center w-fit h-8 px-2 py-1 rounded-sm
+           bg-primary/5 border-[1.5px] border-primary cursor-pointer
+           text-primary font-medium
+           transition-colors duration-300 hover:bg-primary hover:text-white;
+  }
+  .card-information {
+    @apply h-[100px] min-w-[220px] rounded-sm border border-primary/30 px-4 py-4 flex flex-col
+           transition-colors duration-300 hover:border-primary
+           hover:shadow-[0_0_4px_0.1px_rgba(50,86,230,1)];
+  }
+}
